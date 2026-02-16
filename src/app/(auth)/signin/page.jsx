@@ -1,7 +1,7 @@
 import SignIn from '@/components/auth/SignIn'
 import React from 'react'
 
-// 🚫 Prevent search engines from indexing dashboard
+// 🚫 Prevent search engines from indexing auth page
 export const metadata = {
   robots: {
     index: false,
@@ -18,12 +18,12 @@ export const metadata = {
   },
 };
 
-function page() {
+export default function Page({ searchParams }) {
+  const redirect = searchParams?.redirect || "/";
+
   return (
     <div>
-        <SignIn/>
+      <SignIn redirect={redirect} />
     </div>
-  )
+  );
 }
-
-export default page

@@ -6,19 +6,17 @@ import { useRouter } from "next/navigation"; // For redirection
 import { Layout, Eye, EyeOff, Loader2 } from "lucide-react"; // Added Loader2
 import axios from "axios";
 import { Toaster, toast } from "react-hot-toast"; // Import Toast
-import { useSearchParams } from "next/navigation";
 
 // API Base URL
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api";
 
-export default function SignIn() {
+export default function SignIn({ redirect }) {
   const router = useRouter();
 
   // State Management
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const searchParams = useSearchParams();
 
   // Form Data
   const [formData, setFormData] = useState({
@@ -72,7 +70,8 @@ export default function SignIn() {
         toast.success(response.data.message || "Signin successful!");
 
         // 🔁 Handle redirect
-        const redirectUrl = searchParams.get("redirect");
+        const redirectUrl = redirect;
+
 
         setTimeout(() => {
           if (redirectUrl && redirectUrl.startsWith("/")) {
@@ -114,7 +113,8 @@ export default function SignIn() {
   };
 
  const googleLogin = () => {
-  const redirectUrl = searchParams.get("redirect") || "/";
+ const redirectUrl = redirect || "/";
+
 
   window.location.href =
     `${API}/auth/google?redirect=${encodeURIComponent(redirectUrl)}`;
