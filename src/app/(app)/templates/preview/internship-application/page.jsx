@@ -36,7 +36,7 @@ const schema = [
     provider: {
       "@type": "Organization",
       name: "FormPlate",
-      url: "https://formplate.com",
+      url: "https://form-plate.vercel.app",
     },
     offers: {
       "@type": "Offer",

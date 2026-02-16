@@ -35,7 +35,7 @@ const combinedSchema = {
       provider: {
         "@type": "Organization",
         name: "FormPlate",
-        url: "https://your-real-domain.com",
+        url: "https://form-plate.vercel.app",
       },
       offers: {
         "@type": "Offer",
