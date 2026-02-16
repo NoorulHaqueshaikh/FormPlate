@@ -13,6 +13,12 @@ export const metadata = {
   description:
     "Create structured online forms instantly. Generate a shareable link and collect organized submissions in your dashboard — no form building required.",
 
+
+  verification: {                       // ⭐ search console verification
+    google: "1zQq9MCDYbPPbxLWzbAa99H7iSICZ593YVFOpejqMh8",
+  },
+
+
   openGraph: {
     title: "FormPlate — Structured Form Collection Platform",
     description:
