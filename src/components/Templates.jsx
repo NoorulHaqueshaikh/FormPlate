@@ -19,7 +19,7 @@ export default function Templates() {
   const [loadingTemplateStatus, setLoadingTemplateStatus] =
     React.useState(true);
 
-  useEffect(() => { 
+  useEffect(() => {  
     templateUsedOrNot();
   }, []);
 
