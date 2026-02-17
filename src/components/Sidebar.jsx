@@ -85,7 +85,7 @@ const avatarBgColor =
           <div className="bg-blue-900 p-1.5 rounded-lg">
             <div className="border border-dashed border-white w-4 h-4"></div>
           </div>
-          <span className="text-xl font-bold text-gray-900">FormFlow</span>
+          <span className="text-xl font-bold text-gray-900">FormPlate</span>
         </div>
         <button
           onClick={() => setIsOpen(!isOpen)}

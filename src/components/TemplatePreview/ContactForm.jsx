@@ -19,32 +19,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-// 1. SEO CONFIGURATION
-export const metadata = {
-  title: "Free Online Contact Form Builder | Create & Share in Seconds",
-  description:
-    "Create a professional contact form for your business instantly. No coding required. Customize fields, share your link, and start collecting submissions today.",
-  keywords: [
-    "online contact form builder",
-    "free form creator",
-    "lead generation form",
-    "saas contact form",
-    "customer support ticket system",
-    "no-code form builder",
-  ],
-  openGraph: {
-    title: "Create Your Professional Contact Form",
-    description:
-      "Start collecting leads and support tickets instantly with this ready-to-use template.",
-    type: "website",
-    url: "https://formflow.com/templates/preview/contact-form",
-    siteName: "FormFlow",
-    locale: "en_US",
-  },
-  alternates: {
-    canonical: "https://formflow.com/templates/contact-form",
-  },
-};
+
 
 const TEMPLATE_NAME = "contact-form";
 
@@ -58,24 +33,7 @@ export default function ContactForm() {
   const [isUsed, setIsUsed] = React.useState(false);
   const [checkingStatus, setCheckingStatus] = React.useState(true);
 
-  // 2. SCHEMA MARKUP
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "FormFlow Contact Form Builder",
-    applicationCategory: "BusinessApplication",
-    description:
-      "An online tool to create professional contact forms and collect submissions instantly.",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-    },
-    featureList:
-      "Real-time notifications, Spam protection, Dashboard analytics",
-  };
+
 
   React.useEffect(() => {
     checkTemplateUsage();

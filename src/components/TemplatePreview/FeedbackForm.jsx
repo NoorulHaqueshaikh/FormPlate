@@ -19,32 +19,7 @@ import {
   Layers,
 } from "lucide-react";
 
-// 1. SEO CONFIGURATION (Universal Use Case)
-export const metadata = {
-  title: "Universal Feedback Form Template | Create & Share",
-  description:
-    "A versatile feedback form template for any use case: employee surveys, event feedback, customer reviews, or general suggestions. Ready to use.",
-  keywords: [
-    "universal feedback form",
-    "employee survey template",
-    "event feedback form",
-    "suggestion box online",
-    "general feedback form",
-    "user satisfaction survey",
-  ],
-  openGraph: {
-    title: "Universal Feedback Form Template",
-    description:
-      "Collect insights from anyone, anywhere. Use this professional template for your feedback needs.",
-    type: "website",
-    url: "https://formflow.com/templates/preview/feedback-form",
-    siteName: "FormFlow",
-    locale: "en_US",
-  },
-  alternates: {
-    canonical: "https://formflow.com/templates/preview/feedback-form",
-  },
-};
+
 
 const TEMPLATE_NAME = "feedback-form";
 
@@ -62,7 +37,7 @@ export default function FeedbackForm() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "FormFlow Feedback Builder",
+    name: "FormPlate Feedback Builder",
     applicationCategory: "BusinessApplication",
     description:
       "A flexible tool to create feedback forms for any professional or personal use case.",

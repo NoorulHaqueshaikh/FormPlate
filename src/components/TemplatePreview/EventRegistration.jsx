@@ -20,32 +20,7 @@ import {
   Info,
 } from "lucide-react";
 
-// 1. SEO CONFIGURATION
-export const metadata = {
-  title: "Universal Event Registration Form | Create Free Forms",
-  description:
-    "A flexible event registration template for any occasion: weddings, webinars, workshops, or parties. Collect attendee counts, special requests, and RSVPs.",
-  keywords: [
-    "event registration form",
-    "rsvp form template",
-    "party signup sheet",
-    "webinar registration",
-    "ticket booking form",
-    "react event component",
-  ],
-  openGraph: {
-    title: "Universal Event Registration Form",
-    description:
-      "One form for every event type. Customize and share in seconds.",
-    type: "website",
-    url: "https://formflow.com/templates/event-registration",
-    siteName: "FormFlow",
-    locale: "en_US",
-  },
-  alternates: {
-    canonical: "https://formflow.com/templates/event-registration",
-  },
-};
+
 
 const TEMPLATE_NAME = "event-registration";
 
@@ -63,7 +38,7 @@ export default function EventRegistration() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    name: "FormFlow Event Builder",
+    name: "FormPlate Event Builder",
     applicationCategory: "BusinessApplication",
     description:
       "A versatile tool to create registration pages for any physical or virtual event.",

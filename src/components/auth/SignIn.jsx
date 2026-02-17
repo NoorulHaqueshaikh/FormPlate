@@ -99,7 +99,7 @@ export default function SignIn({ redirect }) {
     name: "Login",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://formflow.com/sign-in",
+      urlTemplate: "https://form-plate.vercel.app/signin",
       inLanguage: "en-US",
       actionPlatform: [
         "http://schema.org/DesktopWebPlatform",
@@ -108,7 +108,7 @@ export default function SignIn({ redirect }) {
     },
     object: {
       "@type": "WebApplication",
-      name: "FormFlow",
+      name: "FormPlate",
     },
   };
 
@@ -277,7 +277,7 @@ export default function SignIn({ redirect }) {
 
       {/* Footer copyright */}
       <div className="mt-8 text-slate-400 text-xs text-center">
-        &copy; {new Date().getFullYear()} FormFlow. All rights reserved.
+        &copy; {new Date().getFullYear()} FormPlate. All rights reserved.
       </div>
     </div>
   );
