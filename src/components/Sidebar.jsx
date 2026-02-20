@@ -33,7 +33,7 @@ export default function Sidebar({ user }) {
   const navItems = [
     // Removed hardcoded 'active: true' property
     { name: "Dashboard", icon: LayoutDashboard, href: "/dashboard" },
-    { name: "Templates", icon: LayoutTemplate, href: "/templates" },
+    { name: "Templates", icon: LayoutTemplate, href: "/" },
     { name: "My Forms", icon: FileText, href: "/my-forms" },
     { name: "Submissions", icon: Inbox, href: "/submissions" },
   ];
@@ -123,12 +123,9 @@ const avatarBgColor =
           {navItems.map((item) => {
             // Determine if this item is active by comparing href with current pathname
             const isActive =
-              // ✅ HOME (/) should activate Templates
-              (pathname === "/" && item.href === "/templates") ||
-              // ✅ Exact route match
-              pathname === item.href ||
-              // ✅ Nested routes (e.g. /templates/preview/...)
-              pathname.startsWith(item.href + "/");
+  item.name === "Templates"
+    ? pathname === "/" || pathname.startsWith("/templates")
+    : pathname === item.href || pathname.startsWith(item.href + "/");
 
             return (
               <Link
