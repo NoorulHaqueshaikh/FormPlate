@@ -19,7 +19,7 @@ export default function Templates() {
   const [loadingTemplateStatus, setLoadingTemplateStatus] =
     React.useState(true);
 
-  useEffect(() => {  
+  useEffect(() => {
     templateUsedOrNot();
   }, []);
 
@@ -207,136 +207,139 @@ export default function Templates() {
         })}
       </div>
 
-     {/* Product Explanation Section */}
-<div className="max-w-6xl mt-20">
+      {/* Product Explanation Section */}
+      <div className="max-w-6xl mt-20">
+        {/* Heading */}
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+            Simple data collection without form building
+          </h2>
+          <p className="text-gray-500 mt-2 max-w-3xl">
+            Use ready-structured workflows to collect organized submissions. No
+            designing fields, no setup, just share and receive responses.
+          </p>
+        </div>
 
-  {/* Heading */}
-  <div className="mb-8">
-    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-      Simple data collection without form building
-    </h2>
-    <p className="text-gray-500 mt-2 max-w-3xl">
-      Use ready-structured workflows to collect organized submissions. 
-      No designing fields, no setup, just share and receive responses.
-    </p>
-  </div>
+        {/* How it works */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-white border rounded-xl p-6">
+            <div className="text-blue-900 font-semibold mb-2">
+              1. Choose a template
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Pick a form designed for a real use case like hiring, feedback,
+              registration, or inquiries.
+            </p>
+          </div>
 
-  {/* How it works */}
-  <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="bg-white border rounded-xl p-6">
+            <div className="text-blue-900 font-semibold mb-2">
+              2. Share the link
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              Instantly generate a public form URL and send it to applicants,
+              users, or participants.
+            </p>
+          </div>
 
-    <div className="bg-white border rounded-xl p-6">
-      <div className="text-blue-900 font-semibold mb-2">1. Choose a template</div>
-      <p className="text-gray-600 text-sm leading-relaxed">
-        Pick a form designed for a real use case like hiring, feedback, registration, or inquiries.
-      </p>
-    </div>
+          <div className="bg-white border rounded-xl p-6">
+            <div className="text-blue-900 font-semibold mb-2">
+              3. View submissions
+            </div>
+            <p className="text-gray-600 text-sm leading-relaxed">
+              All responses appear in a structured dashboard, ready to review
+              without sorting.
+            </p>
+          </div>
+        </div>
 
-    <div className="bg-white border rounded-xl p-6">
-      <div className="text-blue-900 font-semibold mb-2">2. Share the link</div>
-      <p className="text-gray-600 text-sm leading-relaxed">
-        Instantly generate a public form URL and send it to applicants, users, or participants.
-      </p>
-    </div>
+        {/* Benefits */}
+        <div className="bg-white border rounded-xl p-6 md:p-8">
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Why structured templates work better
+          </h3>
 
-    <div className="bg-white border rounded-xl p-6">
-      <div className="text-blue-900 font-semibold mb-2">3. View submissions</div>
-      <p className="text-gray-600 text-sm leading-relaxed">
-        All responses appear in a structured dashboard, ready to review without sorting.
-      </p>
-    </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-3 text-gray-700 text-sm">
+            <div>• Consistent response format</div>
+            <div>• No incomplete fields</div>
+            <div>• Faster review process</div>
+            <div>• Clean dashboard data</div>
+            <div>• No configuration needed</div>
+            <div>• Ready in seconds</div>
+          </div>
 
-  </div>
+          <p className="text-gray-600 text-sm mt-6 leading-relaxed max-w-3xl">
+            Unlike customizable form builders, these templates enforce a fixed
+            structure, making submissions easier to compare and manage. Ideal
+            when process matters more than design flexibility.
+          </p>
+        </div>
+      </div>
 
-  {/* Benefits */}
-  <div className="bg-white border rounded-xl p-6 md:p-8">
-    <h3 className="text-lg font-semibold text-gray-900 mb-4">
-      Why structured templates work better
-    </h3>
+      {/* ================= FAQ SECTION ================= */}
+      <div className="mt-20">
+        <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-10 shadow-sm">
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-10 text-center">
+            Frequently Asked Questions
+          </h2>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-y-3 text-gray-700 text-sm">
-      <div>• Consistent response format</div>
-      <div>• No incomplete fields</div>
-      <div>• Faster review process</div>
-      <div>• Clean dashboard data</div>
-      <div>• No configuration needed</div>
-      <div>• Ready in seconds</div>
-    </div>
+          <div className="divide-y divide-gray-200">
+            {/* Q1 */}
+            <div className="py-6 grid md:grid-cols-3 gap-4">
+              <h3 className="font-semibold text-gray-900">
+                Do I need to design the form before using it?
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                No. Each form is already structured. You only create the form
+                and start collecting submissions.
+              </p>
+            </div>
 
-    <p className="text-gray-600 text-sm mt-6 leading-relaxed max-w-3xl">
-      Unlike customizable form builders, these templates enforce a fixed structure,
-      making submissions easier to compare and manage. Ideal when process matters
-      more than design flexibility.
-    </p>
-  </div>
+            {/* Q2 */}
+            <div className="py-6 grid md:grid-cols-3 gap-4">
+              <h3 className="font-semibold text-gray-900">
+                How do I share the form?
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                After creating a template, a public link is generated instantly.
+                You can send it anywhere — website, email, or social media.
+              </p>
+            </div>
 
-</div>
+            {/* Q3 */}
+            <div className="py-6 grid md:grid-cols-3 gap-4">
+              <h3 className="font-semibold text-gray-900">
+                Where are responses stored?
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                All submissions are stored inside your submissions section in a
+                structured format so you can easily review and manage data.
+              </p>
+            </div>
 
-{/* ================= FAQ SECTION ================= */}
-<div className="mt-20">
-  <div className="bg-white border border-gray-200 rounded-xl p-6 md:p-10 shadow-sm">
+            {/* Q4 */}
+            <div className="py-6 grid md:grid-cols-3 gap-4">
+              <h3 className="font-semibold text-gray-900">
+                Can I customize the fields?
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                No. These templates are intentionally fixed-structure to ensure
+                consistent and organized submissions.
+              </p>
+            </div>
 
-
-    <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-10 text-center">
-  Frequently Asked Questions
-</h2>
-
-<div className="divide-y divide-gray-200">
-
-  {/* Q1 */}
-  <div className="py-6 grid md:grid-cols-3 gap-4">
-    <h3 className="font-semibold text-gray-900">
-      Do I need to design the form before using it?
-    </h3>
-    <p className="md:col-span-2 text-gray-600 leading-relaxed">
-      No. Each form is already structured. You only create the form and start collecting submissions.
-    </p>
-  </div>
-
-  {/* Q2 */}
-  <div className="py-6 grid md:grid-cols-3 gap-4">
-    <h3 className="font-semibold text-gray-900">
-      How do I share the form?
-    </h3>
-    <p className="md:col-span-2 text-gray-600 leading-relaxed">
-      After creating a template, a public link is generated instantly. You can send it anywhere — website, email, or social media.
-    </p>
-  </div>
-
-  {/* Q3 */}
-  <div className="py-6 grid md:grid-cols-3 gap-4">
-    <h3 className="font-semibold text-gray-900">
-      Where are responses stored?
-    </h3>
-    <p className="md:col-span-2 text-gray-600 leading-relaxed">
-      All submissions are stored inside your submissions section in a structured format so you can easily review and manage data.
-    </p>
-  </div>
-
-  {/* Q4 */}
-  <div className="py-6 grid md:grid-cols-3 gap-4">
-    <h3 className="font-semibold text-gray-900">
-      Can I customize the fields?
-    </h3>
-    <p className="md:col-span-2 text-gray-600 leading-relaxed">
-      No. These templates are intentionally fixed-structure to ensure consistent and organized submissions.
-    </p>
-  </div>
-
-  {/* Q5 */}
-  <div className="py-6 grid md:grid-cols-3 gap-4">
-    <h3 className="font-semibold text-gray-900">
-      Is FormPlate free?
-    </h3>
-    <p className="md:col-span-2 text-gray-600 leading-relaxed">
-      Yes. You can create and share forms without any cost.
-    </p>
-  </div>
-
-</div>
-
-  </div>
-</div>
-
+            {/* Q5 */}
+            <div className="py-6 grid md:grid-cols-3 gap-4">
+              <h3 className="font-semibold text-gray-900">
+                Is FormPlate free?
+              </h3>
+              <p className="md:col-span-2 text-gray-600 leading-relaxed">
+                Yes. You can create and share forms without any cost.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {showModal && createdForm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
@@ -394,7 +397,8 @@ export default function Templates() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
               <button
                 onClick={() => window.open(createdForm.publicUrl, "_blank")}
-                className="flex items-center justify-center gap-2 border border-gray-300 rounded-lg py-2.5 text-sm font-medium hover:bg-gray-50"
+                className="flex items-center justify-center gap-2 border border-gray-300 
+rounded-lg py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-50"
               >
                 View live form
               </button>
