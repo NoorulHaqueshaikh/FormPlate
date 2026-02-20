@@ -41,7 +41,11 @@ export default function Sidebar({ user }) {
   // console.log("Sidebar received user:", user); // Debugging line to check user prop
   const logoutUser = async () => {
     try {
-      const response = await axios.post(`${API}/auth/logout`, {}, { withCredentials: true });
+      const response = await axios.post(
+        `${API}/auth/logout`,
+        {},
+        { withCredentials: true },
+      );
       if (response.status === 200) {
         router.push("/signin");
       } else {
@@ -50,32 +54,24 @@ export default function Sidebar({ user }) {
     } catch (error) {
       console.error("Logout error:", error);
     }
-  }
-
+  };
 
   // Generate name avator when missing avatar URL
-const getInitials = (name) => {
-  if (!name) return "";
-  const words = name.trim().split(" ");
-  if (words.length === 1) {
-    return words[0][0].toUpperCase();
-  }
-  return (
-    words[0][0].toUpperCase() +
-    words[words.length - 1][0].toUpperCase()
-  );
-};
+  const getInitials = (name) => {
+    if (!name) return "";
+    const words = name.trim().split(" ");
+    if (words.length === 1) {
+      return words[0][0].toUpperCase();
+    }
+    return words[0][0].toUpperCase() + words[words.length - 1][0].toUpperCase();
+  };
 
-// Random background colors
-const colors = [
+  // Random background colors
+  const colors = ["bg-blue-900"];
 
-  "bg-blue-900",
-];
-
-// Pick random color
-const avatarBgColor =
-  colors[user?.name?.charCodeAt(0) % colors.length] || "bg-gray-500";
-
+  // Pick random color
+  const avatarBgColor =
+    colors[user?.name?.charCodeAt(0) % colors.length] || "bg-gray-500";
 
   return (
     <>
@@ -123,9 +119,10 @@ const avatarBgColor =
           {navItems.map((item) => {
             // Determine if this item is active by comparing href with current pathname
             const isActive =
-  item.name === "Templates"
-    ? pathname === "/" || pathname.startsWith("/templates")
-    : pathname === item.href || pathname.startsWith(item.href + "/");
+              item.name === "Templates"
+                ? pathname === "/" || pathname.startsWith("/templates")
+                : pathname === item.href ||
+                  pathname.startsWith(item.href + "/");
 
             return (
               <Link
@@ -160,58 +157,54 @@ const avatarBgColor =
               </div>
             </div>
           ) : user ? (
-  <div className="relative px-2">
-    {/* CLICKABLE USER AREA */}
-    <button
-      type="button"
-      onClick={() => setUserMenuOpen((prev) => !prev)}
-      className="flex items-center gap-3 w-full text-left"
-    >
-     <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 flex items-center justify-center text-white font-semibold text-sm">
-  {user.avatar ? (
-    <Image
-      src={user.avatar}
-      alt={user.name}
-      width={40}
-      height={40}
-      className="object-cover"
-    />
-  ) : (
-    <div
-      className={`w-full h-full flex items-center justify-center ${
-        avatarBgColor
-      }`}
-    >
-      {getInitials(user.name)}
-    </div>
-  )}
-</div>
+            <div className="relative px-2">
+              {/* CLICKABLE USER AREA */}
+              <button
+                type="button"
+                onClick={() => setUserMenuOpen((prev) => !prev)}
+                className="flex items-center gap-3 w-full text-left"
+              >
+                <div className="relative w-10 h-10 rounded-full overflow-hidden shrink-0 flex items-center justify-center text-white font-semibold text-sm">
+                  {user.avatar ? (
+                    <Image
+                      src={user.avatar}
+                      alt={user.name}
+                      width={40}
+                      height={40}
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div
+                      className={`w-full h-full flex items-center justify-center ${
+                        avatarBgColor
+                      }`}
+                    >
+                      {getInitials(user.name)}
+                    </div>
+                  )}
+                </div>
 
+                <div className="flex flex-col">
+                  <span className="text-sm font-semibold text-gray-900">
+                    {user.name}
+                  </span>
+                  <span className="text-xs text-gray-500">Free Plan</span>
+                </div>
+              </button>
 
-      <div className="flex flex-col">
-        <span className="text-sm font-semibold text-gray-900">
-          {user.name}
-        </span>
-        <span className="text-xs text-gray-500">Free Plan</span>
-      </div>
-    </button>
-
-    {/* POPUP */}
-    {userMenuOpen && (
-      <div className="absolute bottom-14 left-2 right-2 bg-blue-900 rounded-lg shadow-lg z-50">
-
-        <button
-          onClick={logoutUser}
-          className="w-full px-4 py-2 text-sm text-white hover:bg-blue-800 rounded-lg text-left"
-
-        >
-          Logout
-        </button>
-      </div>
-    )}
-  </div>
-) : null}
-
+              {/* POPUP */}
+              {userMenuOpen && (
+                <div className="absolute bottom-14 left-2 right-2 bg-blue-900 rounded-lg shadow-lg z-50">
+                  <button
+                    onClick={logoutUser}
+                    className="w-full px-4 py-2 text-sm text-white hover:bg-blue-800 rounded-lg text-left"
+                  >
+                    Logout
+                  </button>
+                </div>
+              )}
+            </div>
+          ) : null}
         </div>
       </aside>
 
