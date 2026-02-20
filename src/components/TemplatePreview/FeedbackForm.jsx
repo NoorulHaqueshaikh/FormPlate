@@ -33,22 +33,7 @@ export default function FeedbackForm() {
   const [isUsed, setIsUsed] = React.useState(false);
   const [checkingStatus, setCheckingStatus] = React.useState(true);
 
-  // 2. SCHEMA MARKUP
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    name: "FormPlate Feedback Builder",
-    applicationCategory: "BusinessApplication",
-    description:
-      "A flexible tool to create feedback forms for any professional or personal use case.",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/InStock",
-    },
-  };
+
 
   React.useEffect(() => {
     checkTemplateUsage();
@@ -102,17 +87,13 @@ export default function FeedbackForm() {
 
   return (
     <div className="w-full min-h-screen bg-slate-50 p-4 md:p-8">
-      {/* Inject Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+
 
       {/* TOP NAVIGATION */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors">
           <ArrowLeft size={20} />
-          <Link href="/templates" className="font-medium">
+          <Link href="/" className="font-medium">
             Back to Templates
           </Link>
         </div>

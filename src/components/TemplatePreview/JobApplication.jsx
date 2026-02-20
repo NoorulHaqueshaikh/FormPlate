@@ -94,7 +94,7 @@ export default function JobApplication() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition-colors">
           <ArrowLeft size={20} />
-          <Link href="/templates" className="font-medium">
+          <Link href="/" className="font-medium">
             Back to Templates
           </Link>
         </div>

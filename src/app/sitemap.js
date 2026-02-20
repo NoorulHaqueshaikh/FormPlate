@@ -14,10 +14,6 @@ export default function sitemap() {
       url: base,
       lastModified: new Date(),
     },
-    {
-      url: `${base}/templates`,
-      lastModified: new Date(),
-    },
     ...templates.map((slug) => ({
       url: `${base}/templates/preview/${slug}`,
       lastModified: new Date(),
