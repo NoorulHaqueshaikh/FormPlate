@@ -246,12 +246,12 @@ export default function JobApplication() {
                         <div className="grid grid-cols-2 gap-3">
                           <input
                             type="text"
-                            className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                            className="w-full bg-white text-slate-800 placeholder:text-slate-500 border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                             placeholder="First Name"
                           />
                           <input
                             type="text"
-                            className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                            className="w-full bg-white text-slate-800 placeholder:text-slate-500 border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                             placeholder="Last Name"
                           />
                         </div>
@@ -268,7 +268,7 @@ export default function JobApplication() {
                           />
                           <input
                             type="email"
-                            className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                            className="w-full bg-white text-slate-800 placeholder:text-slate-500 border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                             placeholder="email@example.com"
                           />
                         </div>
@@ -282,7 +282,7 @@ export default function JobApplication() {
                           />
                           <input
                             type="tel"
-                            className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                            className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                             placeholder="(555) 000-0000"
                           />
                         </div>
@@ -300,7 +300,7 @@ export default function JobApplication() {
                         />
                         <input
                           type="text"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                           placeholder="City, State"
                         />
                       </div>
@@ -314,7 +314,7 @@ export default function JobApplication() {
                         />
                         <input
                           type="url"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                           placeholder="https://"
                         />
                       </div>
@@ -359,7 +359,7 @@ export default function JobApplication() {
                         />
                         <input
                           type="text"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
                           placeholder="e.g. 50,000"
                         />
                       </div>
@@ -369,7 +369,7 @@ export default function JobApplication() {
                           Earliest Start Date
                         </label>
                         <Calendar
-                          className="absolute left-3 top-9 text-gray-400"
+                          className="absolute left-3 top-9  text-gray-400"
                           size={16}
                         />
                         <input
@@ -388,7 +388,7 @@ export default function JobApplication() {
                         />
                         <input
                           type="number"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
                           placeholder="e.g. 3"
                         />
                       </div>
@@ -404,7 +404,7 @@ export default function JobApplication() {
                       />
                       <input
                         type="text"
-                        className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
+                        className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-purple-100"
                         placeholder="e.g. PMP, CPR Certified..."
                       />
                     </div>
@@ -441,7 +441,7 @@ export default function JobApplication() {
                           Cover Letter
                         </label>
                         <textarea
-                          className="flex-1 w-full bg-white border border-gray-200 rounded-xl p-3 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-orange-100 resize-none"
+                          className="flex-1 w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-xl p-3 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-orange-100 resize-none"
                           placeholder="Tell us why you're a great fit..."
                           rows={4}
                         ></textarea>

@@ -247,7 +247,7 @@ export default function ContactForm() {
                         </label>
                         <input
                           type="text"
-                          className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-orange-100 transition-all"
+                          className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-500 outline-none focus:ring-2 focus:ring-orange-100 transition-all"
                           placeholder="John Doe"
                         />
                       </div>
@@ -264,7 +264,7 @@ export default function ContactForm() {
                           />
                           <input
                             type="email"
-                            className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-orange-100 transition-all"
+                            className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-500 outline-none focus:ring-2 focus:ring-orange-100 transition-all"
                             placeholder="you@example.com"
                           />
                         </div>
@@ -282,7 +282,7 @@ export default function ContactForm() {
                         />
                         <input
                           type="tel"
-                          className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-orange-100 transition-all"
+                          className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none text-slate-800 placeholder:text-slate-500 focus:ring-2 focus:ring-orange-100 transition-all"
                           placeholder="(555) 000-0000"
                         />
                       </div>
@@ -343,7 +343,7 @@ export default function ContactForm() {
                       </label>
                       <input
                         type="text"
-                        className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-orange-100 transition-all"
+                        className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm text-slate-800 placeholder:text-slate-500 outline-none focus:ring-2 focus:ring-orange-100 transition-all"
                         placeholder="Brief summary of your request"
                       />
                     </div>
@@ -353,7 +353,7 @@ export default function ContactForm() {
                         Your Message <span className="text-red-500">*</span>
                       </label>
                       <textarea
-                        className="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-700 outline-none focus:ring-2 focus:ring-orange-100 resize-none transition-all"
+                        className="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-800 placeholder:text-slate-500 outline-none focus:ring-2 focus:ring-orange-100 resize-none transition-all"
                         placeholder="How can we help you today? Please provide as much detail as possible..."
                         rows={5}
                       ></textarea>

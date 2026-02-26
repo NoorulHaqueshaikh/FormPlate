@@ -248,7 +248,7 @@ export default function EventRegistration() {
                         </label>
                         <input
                           type="text"
-                          className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
+                          className="w-full bg-white border border-slate-200 text-slate-800 placeholder:text-slate-500 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
                           placeholder="First Name"
                         />
                       </div>
@@ -258,7 +258,7 @@ export default function EventRegistration() {
                         </label>
                         <input
                           type="text"
-                          className="w-full bg-white border border-slate-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-slate-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
                           placeholder="Last Name"
                         />
                       </div>
@@ -276,7 +276,7 @@ export default function EventRegistration() {
                         />
                         <input
                           type="email"
-                          className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
                           placeholder="email@address.com"
                         />
                       </div>
@@ -290,7 +290,7 @@ export default function EventRegistration() {
                         />
                         <input
                           type="tel"
-                          className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
                           placeholder="(555) 000-0000"
                         />
                       </div>
@@ -337,7 +337,7 @@ export default function EventRegistration() {
                         <input
                           type="number"
                           min="1"
-                          className="w-full bg-white border border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-slate-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-emerald-100 transition-all"
                           placeholder="1"
                         />
                       </div>
@@ -365,7 +365,7 @@ export default function EventRegistration() {
                         </span>
                       </label>
                       <textarea
-                        className="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-700 outline-none focus:ring-2 focus:ring-emerald-100 resize-none transition-all"
+                        className="w-full bg-white border border-slate-200 rounded-xl p-4 text-sm text-slate-800 placeholder:text-slate-600 outline-none focus:ring-2 focus:ring-emerald-100 resize-none transition-all"
                         placeholder="Please let us know if you have any specific requirements..."
                         rows={3}
                       ></textarea>

@@ -242,12 +242,12 @@ export default function InternshipApplication() {
                         <div className="grid grid-cols-2 gap-3">
                           <input
                             type="text"
-                            className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                            className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                             placeholder="First Name"
                           />
                           <input
                             type="text"
-                            className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                            className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                             placeholder="Last Name"
                           />
                         </div>
@@ -265,7 +265,7 @@ export default function InternshipApplication() {
                           />
                           <input
                             type="email"
-                            className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                            className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                             placeholder="you@example.com"
                           />
                         </div>
@@ -279,7 +279,7 @@ export default function InternshipApplication() {
                           />
                           <input
                             type="tel"
-                            className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                            className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                             placeholder="(555) 000-0000"
                           />
                         </div>
@@ -297,7 +297,7 @@ export default function InternshipApplication() {
                         />
                         <input
                           type="url"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                           placeholder="https://"
                         />
                       </div>
@@ -311,7 +311,7 @@ export default function InternshipApplication() {
                         />
                         <input
                           type="text"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-teal-100"
                           placeholder="City, State"
                         />
                       </div>
@@ -350,7 +350,7 @@ export default function InternshipApplication() {
                         </label>
                         <input
                           type="text"
-                          className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                           placeholder="e.g. State University"
                         />
                       </div>
@@ -361,7 +361,7 @@ export default function InternshipApplication() {
                         </label>
                         <input
                           type="text"
-                          className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                           placeholder="e.g. Marketing, CS, Business"
                         />
                       </div>
@@ -376,7 +376,7 @@ export default function InternshipApplication() {
                         />
                         <input
                           type="date"
-                          className="w-full bg-white border border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+                          className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg pl-9 pr-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
                         />
                       </div>
                       <div className="md:col-span-2">
@@ -386,7 +386,7 @@ export default function InternshipApplication() {
   <input
     type="text"
     disabled
-    className="w-full bg-white border border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
+    className="w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-100"
     placeholder="e.g. React, Excel, Canva, SEO"
   />
   <p className="text-xs text-gray-500 mt-1">
@@ -485,7 +485,7 @@ export default function InternshipApplication() {
                           Cover Letter
                         </label>
                         <textarea
-                          className="flex-1 w-full bg-white border border-gray-200 rounded-xl p-3 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-orange-100 resize-none"
+                          className="flex-1 w-full bg-white border text-slate-800 placeholder:text-slate-500 border-gray-200 rounded-xl p-3 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-orange-100 resize-none"
                           placeholder="Tell us why you want to intern with us..."
                           rows={4}
                         ></textarea>
