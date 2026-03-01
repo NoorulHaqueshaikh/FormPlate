@@ -20,12 +20,12 @@ export const metadata = {
     title: "Ready-to-Use Online Form Templates",
     description:
       "Choose a template, share a link, and collect organized responses without building forms.",
-    url: "https://form-plate.vercel.app/templates",
+    url: "https://formplate.andicode.com",
     siteName: "FormPlate",
     type: "website",
   },
   alternates: {
-    canonical: "https://form-plate.vercel.app/templates",
+    canonical: "https://formplate.andicode.com",
   },
 };
 
@@ -46,7 +46,7 @@ const schema = {
       provider: {
         "@type": "Organization",
         name: "FormPlate",
-        url: "https://form-plate.vercel.app",
+        url: "https://formplate.andicode.com",
       },
       offers: {
         "@type": "Offer",

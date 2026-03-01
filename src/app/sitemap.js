@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const base = "https://form-plate.vercel.app";
+  const base = "https://formplate.andicode.com";
 
   const templates = [
     "job-application",

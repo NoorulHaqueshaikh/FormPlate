@@ -35,7 +35,7 @@ const combinedSchema = {
       provider: {
         "@type": "Organization",
         name: "FormPlate",
-        url: "https://form-plate.vercel.app",
+        url: "https://formplate.andicode.com",
       },
       offers: {
         "@type": "Offer",
