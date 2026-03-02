@@ -16,6 +16,10 @@ export const metadata = {
     "contact form submission dashboard",
     "ready to use contact form template",
   ],
+
+  alternates: {
+    canonical: "https://formplate.andicode.com/templates/preview/contact-form",
+  },
 };
 
 const schema = [
