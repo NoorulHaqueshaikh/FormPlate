@@ -10,7 +10,7 @@ import { toast, Toaster } from 'react-hot-toast';
 // API Base URL
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:5000/api';
 
-export default function SignUp() {
+export default function SignUp({redirect}) {
   const router = useRouter();
   const [showPassword, setShowPassword] = useState(false);
   
@@ -23,6 +23,15 @@ export default function SignUp() {
 
   // UI State
   const [loading, setLoading] = useState(false);
+
+
+  const googleLogin = () => {
+ const redirectUrl = redirect || "/";
+
+
+  window.location.href =
+    `${API}/auth/google?redirect=${encodeURIComponent(redirectUrl)}`;
+};
 
   // Handle Input Change
   const handleChange = (e) => {
@@ -108,7 +117,7 @@ export default function SignUp() {
           </div>
 
           {/* Google Button */}
-          <button className="w-full flex items-center justify-center gap-3 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium py-3 rounded-xl transition-all mb-8 group">
+          <button onClick={googleLogin} className="w-full flex items-center justify-center gap-3 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-medium py-3 rounded-xl transition-all mb-8 group">
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path
                 d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
