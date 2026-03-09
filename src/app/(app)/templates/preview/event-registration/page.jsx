@@ -16,6 +16,11 @@ export const metadata = {
     "event attendee registration form",
     "free event registration form",
   ],
+
+  alternates: {
+    canonical:
+      "https://formplate.andicode.com/templates/preview/event-registration",
+  },
 };
 
 const combinedSchema = {

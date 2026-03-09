@@ -18,6 +18,11 @@ export const metadata = {
     "ready to use internship application form",
     "internship form with submissions",
   ],
+
+  alternates: {
+    canonical:
+      "https://formplate.andicode.com/templates/preview/internship-application",
+  },
 };
 
 const schema = [

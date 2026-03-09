@@ -18,6 +18,11 @@ export const metadata = {
     "ready to use job application form",
     "job application form with submissions",
   ],
+
+  alternates: {
+    canonical:
+      "https://formplate.andicode.com/templates/preview/job-application",
+  },
 };
 
 const schema = [

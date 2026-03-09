@@ -16,6 +16,11 @@ export const metadata = {
     "feedback form shareable link",
     "structured feedback collection",
   ],
+
+  alternates: {
+    canonical:
+      "https://formplate.andicode.com/templates/preview/feedback-form",
+  },
 };
 
 const combinedSchema = {
