@@ -145,12 +145,12 @@ export default function EventRegistration() {
           ) : isUsed ? (
             <>
               <CheckCircle2 size={18} />
-              <span>Template already used</span>
+              <span>Template Already Active</span>
             </>
           ) : (
             <>
               <Check size={20} />
-              <span>Use This Template</span>
+              <span>Launch This Template</span>
             </>
           )}
         </button>
@@ -170,11 +170,9 @@ export default function EventRegistration() {
                   One form, any event
                 </h3>
                 <p className="text-slate-600 leading-relaxed text-sm md:text-base">
-                  From backyard parties to global conferences,{" "}
-                  <strong>use this template</strong> to manage your guest list
-                  effortlessly. The input fields are designed to be universally
-                  applicable, removing niche jargon so you can start collecting
-                  RSVPs immediately.
+                  Whether you are throwing a small get-together or hosting a massive business summit,{" "}
+                  <strong>use this template</strong> to keep track of your attendees with ease. 
+                  The questions are set up to work for any occasion, skipping complicated terms so you can gather RSVPs right away.
                 </p>
               </section>
 
@@ -184,12 +182,12 @@ export default function EventRegistration() {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Primary Contact Information",
-                    "Ticket / RSVP Type Selector",
-                    "Headcount / Group Size Input",
-                    "Open-Ended Special Requests",
-                    "Calendar & Schedule Preferences",
-                    "Instant Confirmation Emails",
+                    "Basic Guest Contact Details",
+                    "Ticket or RSVP Choices",
+                    "Group Size and Headcount",
+                    "Box for Special Requests",
+                    "Date and Time Options",
+                    "Automatic Email Receipts",
                   ].map((item, index) => (
                     <li
                       key={index}
@@ -250,8 +248,7 @@ export default function EventRegistration() {
                   </h2>
 
                   <p className="text-emerald-100 text-xs md:text-sm relative z-10">
-                    We are excited to have you! Please fill out the details
-                    below.
+                    We can't wait to see you! Please fill in your information below to save your seat.
                   </p>
                 </div>
 
@@ -402,8 +399,7 @@ export default function EventRegistration() {
                     <div className="mt-4 flex items-start gap-2">
                       <Info size={16} className="text-emerald-600 mt-0.5" />
                       <span className="text-xs text-slate-500">
-                        We will send a confirmation email to the address
-                        provided above.
+                        A quick confirmation message will be sent to the email you entered above.
                       </span>
                     </div>
                   </section>
@@ -431,15 +427,14 @@ export default function EventRegistration() {
 
     <div className="grid md:grid-cols-2 gap-8 text-slate-600 text-sm md:text-base leading-relaxed">
       <p>
-        This event registration form template allows organizers to collect attendee details
-        through a public shareable link. It is designed to work for conferences,
-        weddings, webinars, workshops, fundraisers, and private events.
+        Our online event sign-up template makes it simple for hosts to gather guest information using a quick, shareable web link. 
+        It is built to handle everything from large conferences and charity drives to private weddings and virtual workshops.
       </p>
 
       <p>
-        Once created, all registrations are securely stored in your dashboard,
-        giving you a centralized view of attendees, registration types, and
-        special requests without manual tracking.
+        As soon as you create it, every RSVP is safely saved right in your dashboard. 
+        This provides a single, organized place to view your guest list, ticket choices, 
+        and specific needs without having to manage messy spreadsheets.
       </p>
     </div>
   </div>
@@ -452,10 +447,10 @@ export default function EventRegistration() {
 
     <div className="grid md:grid-cols-4 gap-6 text-center">
       {[
-        "Create the event registration form instantly.",
-        "Generate a public shareable registration link.",
-        "Share the link with attendees.",
-        "View and manage all registrations in your submissions."
+        "Generate your custom event form in seconds.",
+        "Get a public link that is ready to share.",
+        "Send the link out to all your expected guests.",
+        "Track and organize every RSVP directly from your dashboard."
       ].map((step, index) => (
         <div
           key={index}
@@ -478,12 +473,12 @@ export default function EventRegistration() {
 
     <div className="grid md:grid-cols-2 gap-6">
       {[
-        "Structured attendee information collection",
-        "Works for online and physical events",
-        "Public shareable registration link",
-        "Centralized dashboard for submissions",
-        "Easy to use for organizers and attendees",
-        "Free to create and share"
+        "Gather the exact details you need from every guest",
+        "Perfect for both virtual and in-person gatherings",
+        "Includes a direct web link to easily share anywhere",
+        "Keep your entire guest list neatly in one place",
+        "Smooth and simple for both hosts and visitors",
+        "100% free to set up and distribute"
       ].map((benefit, index) => (
         <div
           key={index}
@@ -554,7 +549,7 @@ export default function EventRegistration() {
       Explore Similar Templates
     </h2>
     <p className="text-slate-600 mb-8 text-sm md:text-base">
-      Not exactly what you are looking for? Check out these related forms to find the perfect fit for your workflow.
+      Need to collect a different kind of information? Browse through these other ready-to-use form templates to find exactly what you need.
     </p>
 
     <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -620,7 +615,7 @@ export default function EventRegistration() {
             </h2>
 
             <p className="text-sm text-slate-500 text-center mt-2 mb-6">
-              Your event registration form is ready.
+              Your new event sign-up page is now live.
             </p>
 
             <label className="block text-xs font-medium text-slate-500 mb-2">
