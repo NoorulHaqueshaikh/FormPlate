@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { AuthChecking } from "@/utils/auth/AuthChecking";
@@ -13,18 +14,47 @@ import {
   User,
   Mail,
   Phone,
-  Calendar,
   Ticket,
   Users,
   MessageSquare,
   Info,
 } from "lucide-react";
 
-
-
 const TEMPLATE_NAME = "event-registration";
 
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api";
+
+// UPDATED ARRAY WITH IMAGE PATHS FROM YOUR HOME PAGE
+const SIMILAR_TEMPLATES = [
+  {
+    id: "contact-form",
+    title: "Contact Form",
+    description: "A simple, effective way for visitors to get in touch with you.",
+    image: "/template-image/contact.png",
+    href: "/templates/preview/contact-form", 
+  },
+  {
+    id: "feedback-form",
+    title: "Feedback Form",
+    description: "Gather feedback on customer experiences to improve your services.",
+    image: "/template-image/feedback.png",
+    href: "/templates/preview/feedback-form",
+  },
+  {
+    id: "job-application",
+    title: "Job Application",
+    description: "Collect resumes, cover letters, and candidate details efficiently.",
+    image: "/template-image/job-application.png",
+    href: "/templates/preview/job-application",
+  },
+  {
+    id: "internship-application",
+    title: "Internship Application",
+    description: "Streamline your student recruitment process with this structured form.",
+    image: "/template-image/internship.png",
+    href: "/templates/preview/internship-application",
+  }
+];
 
 export default function EventRegistration() {
   const router = useRouter();
@@ -33,8 +63,6 @@ export default function EventRegistration() {
   const [createdForm, setCreatedForm] = React.useState(null);
   const [isUsed, setIsUsed] = React.useState(false);
   const [checkingStatus, setCheckingStatus] = React.useState(true);
-
-
 
   React.useEffect(() => {
     checkTemplateUsage();
@@ -88,7 +116,7 @@ export default function EventRegistration() {
 
   return (
     <div className="w-full min-h-screen bg-slate-50 p-4 md:p-8">
-     
+      
 
       {/* TOP NAVIGATION */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
@@ -520,6 +548,54 @@ export default function EventRegistration() {
   </div>
 </div>
 
+  {/* ================= SECTION 5 — SIMILAR TEMPLATES (UPDATED WITH IMAGES) ================= */}
+  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12 mb-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+      Explore Similar Templates
+    </h2>
+    <p className="text-slate-600 mb-8 text-sm md:text-base">
+      Not exactly what you are looking for? Check out these related forms to find the perfect fit for your workflow.
+    </p>
+
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {SIMILAR_TEMPLATES.map((template) => (
+        <li key={template.id} className="group flex flex-col h-full">
+          <Link 
+            href={template.href}
+            className="bg-white border border-slate-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-emerald-500"
+          >
+            {/* Preview Image Area */}
+            <div className="h-40 bg-slate-100 relative w-full border-b border-slate-100">
+              <div className="absolute inset-0 flex items-center justify-center text-slate-400 bg-slate-50">
+                <span className="text-sm font-medium">Preview Image</span>
+              </div>
+              <Image
+                src={template.image}
+                alt={`${template.title} Template`}
+                fill
+                className="object-cover md:object-top md:pt-0.4 relative z-10"
+              />
+            </div>
+            
+            {/* Card Text Content */}
+            <div className="p-5 flex flex-col flex-1 bg-white group-hover:bg-slate-50 transition-colors">
+              <h3 className="text-lg font-bold text-slate-900 group-hover:text-emerald-700 transition-colors">
+                {template.title}
+              </h3>
+              <p className="text-sm text-slate-500 mt-2 mb-4 flex-1 leading-relaxed">
+                {template.description}
+              </p>
+              
+              {/* Call to Action Link */}
+              <div className="mt-auto flex items-center text-sm font-semibold text-emerald-600 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                View Template <ArrowLeft size={16} className="ml-1 rotate-180" />
+              </div>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </div>
 
 </div>
 
