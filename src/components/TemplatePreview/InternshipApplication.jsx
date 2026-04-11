@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { AuthChecking } from "@/utils/auth/AuthChecking";
@@ -26,6 +27,38 @@ import {
 const TEMPLATE_NAME = "internship-application";
 
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api";
+
+// UPDATED ARRAY WITH IMAGE PATHS FROM YOUR HOME PAGE
+const SIMILAR_TEMPLATES = [
+  {
+    id: "contact-form",
+    title: "Contact Form",
+    description: "A simple, effective way for visitors to get in touch with you.",
+    image: "/template-image/contact.png",
+    href: "/templates/preview/contact-form", 
+  },
+  {
+    id: "feedback-form",
+    title: "Feedback Form",
+    description: "Gather feedback on customer experiences to improve your services.",
+    image: "/template-image/feedback.png",
+    href: "/templates/preview/feedback-form",
+  },
+  {
+    id: "job-application",
+    title: "Job Application",
+    description: "Collect resumes, cover letters, and candidate details efficiently.",
+    image: "/template-image/job-application.png",
+    href: "/templates/preview/job-application",
+  },
+  {
+    id: "event-registration",
+    title: "Event Registration",
+    description: "Manage attendee sign-ups and gather dietary requirements easily.",
+    image: "/template-image/event-registration.png",
+    href: "/templates/preview/event-registration",
+  }
+];
 
 export default function InternshipApplication() {
   const router = useRouter();
@@ -87,6 +120,8 @@ export default function InternshipApplication() {
 
   return (
     <div className="w-full min-h-screen bg-gray-50 p-4 md:p-8">
+      
+
       {/* 1. TOP NAVIGATION */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition-colors">
@@ -139,10 +174,9 @@ export default function InternshipApplication() {
                   About this template
                 </h3>
                 <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-                  A versatile internship form designed for companies in any
-                  industry. Whether you are hiring for summer programs, co-ops,
-                  or apprenticeships, this form collects the essential skills
-                  and availability data you need.
+                  An easy-to-use internship form made for any type of business. 
+                  Whether you need interns for the summer, co-ops, or training programs, 
+                  this form helps you quickly get the skills and schedule details you need from students.
                 </p>
               </section>
 
@@ -212,12 +246,11 @@ export default function InternshipApplication() {
                 <div className="bg-gradient-to-r from-[#0f766e] to-[#0ea5e9] p-6 md:p-8 text-center relative overflow-hidden">
                   <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                   <h2 className="text-xl md:text-3xl font-bold text-white mb-2 relative z-10">
-  Internship Application
-</h2>
+                    Internship Application
+                  </h2>
 
                   <p className="text-teal-50 text-xs md:text-sm relative z-10">
-                    We are looking for future leaders. Apply now to join our
-                    program.
+                    We want to help build future leaders. Send in your details below to become part of our team.
                   </p>
                 </div>
 
@@ -515,16 +548,15 @@ export default function InternshipApplication() {
 
     <div className="grid md:grid-cols-2 gap-8 text-gray-600 text-sm md:text-base leading-relaxed">
       <p>
-        This internship application form is a ready-to-use predefined template
-        designed for companies, startups, colleges, and training programs.
-        There is no need to edit or customize the structure. Simply create the
-        form and generate a public internship application link.
+        This intern application form is a completely built template made for businesses, 
+        startups, schools, and training camps. You do not have to spend time editing or 
+        changing the layout. Just click to create it and get a public web link to share right away.
       </p>
 
       <p>
-        Applicants can submit their education details, skills, preferred
-        duration, and documents through a structured form. All internship
-        submissions are securely stored in your dashboard for easy review.
+        Students and job seekers can easily upload their school history, key skills, 
+        available dates, and resumes using this clean form. Every application you receive 
+        is kept safely inside your main dashboard so you can review them fast.
       </p>
     </div>
   </div>
@@ -537,10 +569,10 @@ export default function InternshipApplication() {
 
     <div className="grid md:grid-cols-4 gap-6 text-center">
       {[
-        "Click 'Use This Template' to create your internship form.",
-        "A public internship application link is generated instantly.",
-        "Share the link with students or applicants.",
-        "View and manage all submissions in your submissions."
+        "Hit the button to generate your internship form right away.",
+        "Get a special web link that is completely ready to use.",
+        "Send the link out to students, colleges, or job boards.",
+        "Read and sort through all the student answers in your dashboard."
       ].map((step, index) => (
         <div
           key={index}
@@ -563,12 +595,12 @@ export default function InternshipApplication() {
 
     <div className="grid md:grid-cols-2 gap-6">
       {[
-        "Collect standardized student and academic information",
-        "Manage high-volume internship applications easily",
-        "Receive resumes and supporting documents in one place",
-        "Ideal for campus drives and internship programs",
-        "No customization required",
-        "Free and easy to share"
+        "Collect the exact same details from every student",
+        "Easily handle a large number of intern applications",
+        "Keep cover letters and resumes neatly in one spot",
+        "Perfect for college recruiting and summer programs",
+        "Ready to use with zero setup or editing",
+        "100% free to create and share online"
       ].map((benefit, index) => (
         <div
           key={index}
@@ -630,6 +662,55 @@ export default function InternshipApplication() {
         </p>
       </div>
     </div>
+  </div>
+
+  {/* ================= SECTION 5 — SIMILAR TEMPLATES ================= */}
+  <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 md:p-12 mb-10">
+    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+      Explore Similar Templates
+    </h2>
+    <p className="text-gray-600 mb-8 text-sm md:text-base">
+      Not exactly what you are looking for? Check out these related forms to find the perfect fit for your workflow.
+    </p>
+
+    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {SIMILAR_TEMPLATES.map((template) => (
+        <li key={template.id} className="group flex flex-col h-full">
+          <Link 
+            href={template.href}
+            className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            {/* Preview Image Area */}
+            <div className="h-40 bg-gray-100 relative w-full border-b border-gray-100">
+              <div className="absolute inset-0 flex items-center justify-center text-gray-400 bg-gray-50">
+                <span className="text-sm font-medium">Preview Image</span>
+              </div>
+              <Image
+                src={template.image}
+                alt={`${template.title} Template`}
+                fill
+                className="object-cover md:object-top md:pt-0.4 relative z-10"
+              />
+            </div>
+            
+            {/* Card Text Content */}
+            <div className="p-5 flex flex-col flex-1 bg-white group-hover:bg-gray-50 transition-colors">
+              <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-700 transition-colors">
+                {template.title}
+              </h3>
+              <p className="text-sm text-gray-500 mt-2 mb-4 flex-1 leading-relaxed">
+                {template.description}
+              </p>
+              
+              {/* Call to Action Link */}
+              <div className="mt-auto flex items-center text-sm font-semibold text-blue-600 opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0">
+                View Template <ArrowLeft size={16} className="ml-1 rotate-180" />
+              </div>
+            </div>
+          </Link>
+        </li>
+      ))}
+    </ul>
   </div>
 
 </div>
