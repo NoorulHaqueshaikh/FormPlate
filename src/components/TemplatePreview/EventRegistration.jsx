@@ -503,40 +503,37 @@ export default function EventRegistration() {
 
     <div>
       <h3 className="font-semibold text-slate-900 mb-2">
-        Can I use this event registration form for any type of event?
+        Do I need technical skills to build this event registration form?
       </h3>
       <p>
-        Yes. This template is designed for universal use including conferences,
-        weddings, webinars, fundraisers, workshops, and private gatherings.
+        Not at all. FormPlate provides a predefined event signup template. You do not need to drag-and-drop or edit any fields. Just select the template, and your form is instantly ready to accept attendees.
       </p>
     </div>
 
     <div>
       <h3 className="font-semibold text-slate-900 mb-2">
-        How do I share the event registration form?
+        How do I invite attendees using this registration template?
       </h3>
       <p>
-        After creating the form, you receive a public shareable link that can be
-        sent to attendees via email, social media, or your website.
+        The moment you select the template, FormPlate generates a custom, public shareable link. You can send this link to your guest list via email, post it on social media, or drop it in WhatsApp groups to start collecting RSVPs.
       </p>
     </div>
 
     <div>
       <h3 className="font-semibold text-slate-900 mb-2">
-        Where can I see the registrations?
+        Where can I see the list of registered event attendees?
       </h3>
       <p>
-        All event registrations are stored securely inside your dashboard,
-        allowing you to manage attendees in one centralized location.
+        All completed registrations and guest details are automatically routed to your centralized FormPlate dashboard. From there, you can easily track your guest count, view attendee information, and manage your event list.
       </p>
     </div>
 
     <div>
       <h3 className="font-semibold text-slate-900 mb-2">
-        Is this event registration form free to use?
+        Is it free to generate a link for this event signup form?
       </h3>
       <p>
-        Yes. You can create and share the event registration form at no cost.
+        Yes, using our ready-made event registration template, getting your unique sharing link, and tracking your RSVPs in the dashboard is completely free.
       </p>
     </div>
 

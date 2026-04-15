@@ -19,8 +19,6 @@ import {
   Layers,
 } from "lucide-react";
 
-
-
 const TEMPLATE_NAME = "feedback-form";
 
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api";
@@ -32,8 +30,6 @@ export default function FeedbackForm() {
   const [createdForm, setCreatedForm] = React.useState(null);
   const [isUsed, setIsUsed] = React.useState(false);
   const [checkingStatus, setCheckingStatus] = React.useState(true);
-
-
 
   React.useEffect(() => {
     checkTemplateUsage();
@@ -88,7 +84,6 @@ export default function FeedbackForm() {
   return (
     <div className="w-full min-h-screen bg-slate-50 p-4 md:p-8">
 
-
       {/* TOP NAVIGATION */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors">
@@ -140,7 +135,7 @@ export default function FeedbackForm() {
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
                   Collect insights from anyone
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+                <p className="text-slate-600 leading-relaxed text-sm md:text-base text-justify">
                   A truly universal feedback tool.{" "}
                   <strong>Use this template</strong> to gather opinions from
                   employees, clients, students, or event attendees. The fields
@@ -219,7 +214,7 @@ export default function FeedbackForm() {
                   <h2 className="text-xl md:text-3xl font-bold text-white mb-2 relative z-10">
                     We Value Your Feedback
                   </h2>
-                  <p className="text-fuchsia-100 text-xs md:text-sm relative z-10">
+                  <p className="text-fuchsia-100 text-xs md:text-sm relative z-10 text-justify">
                     Your input helps us improve. Please share your thoughts
                     below.
                   </p>
@@ -394,14 +389,14 @@ export default function FeedbackForm() {
     </h2>
 
     <div className="grid md:grid-cols-2 gap-8 text-slate-600 text-sm md:text-base leading-relaxed">
-      <p>
+      <p className="text-justify">
         This online feedback form helps you collect structured responses from
         employees, customers, students, or event attendees. The layout ensures
         consistent information so every submission is organized and easy to
         review.
       </p>
 
-      <p>
+      <p className="text-justify">
         Once created, you receive a public shareable link that can be distributed
         through email, website, or internal communication channels. All
         feedback responses are stored securely in your dashboard.
@@ -429,7 +424,7 @@ export default function FeedbackForm() {
           <div className="w-10 h-10 mx-auto mb-4 rounded-full bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
             {index + 1}
           </div>
-          <p className="text-slate-600 text-sm md:text-base">
+          <p className="text-slate-600 text-sm md:text-base text-justify">
             {step}
           </p>
         </div>
@@ -457,7 +452,7 @@ export default function FeedbackForm() {
           className="flex items-start gap-3 bg-purple-50 p-4 rounded-lg border border-purple-100"
         >
           <CheckCircle2 size={18} className="text-purple-600 mt-1" />
-          <span className="text-slate-700 text-sm md:text-base">
+          <span className="text-slate-700 text-sm md:text-base text-justify">
             {benefit}
           </span>
         </div>
@@ -474,40 +469,37 @@ export default function FeedbackForm() {
     <div className="space-y-6 text-slate-600 text-sm md:text-base">
       <div>
         <h3 className="font-semibold text-slate-900 mb-2">
-          Can I customize the feedback form fields?
+          Do I have to configure the survey questions myself?
         </h3>
-        <p>
-          No, this feedback form follows a structured layout to ensure
-          consistent and comparable responses.
+        <p className="text-justify">
+          There is zero configuration needed. We have already structured the fields to capture essential client insights effectively. By choosing this template, you bypass the building phase and get straight to gathering data.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-slate-900 mb-2">
-          How do I share the feedback form?
+          What is the best way to distribute this to my audience?
         </h3>
-        <p>
-          After creating the form, you receive a public link that can be shared
-          internally or externally.
+        <p className="text-justify">
+          The system provides a standalone, clickable URL. It works perfectly as a hyperlink in your email signatures, embedded behind a 'Leave a Review' button on your site, or sent directly to users via SMS after a purchase or support interaction.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-slate-900 mb-2">
-          Where are responses stored?
+          How do I read the incoming opinions and ratings?
         </h3>
-        <p>
-          All feedback submissions are securely stored inside your submissions section
-          where you can review and manage them easily.
+        <p className="text-justify">
+          Every time a user submits their thoughts, the data is instantly forwarded to your private admin panel. This gives you a clear, organized overview of customer sentiment without relying on messy email threads or spreadsheets.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-slate-900 mb-2">
-          Is this feedback form free to use?
+          Are there any hidden fees for collecting these insights?
         </h3>
-        <p>
-          Yes, you can create and share this online feedback form at no cost.
+        <p className="text-justify">
+          No, gathering user opinions through this specific pre-made setup is provided at zero cost, including both the sharing URL and the tracking portal.
         </p>
       </div>
     </div>
@@ -536,7 +528,7 @@ export default function FeedbackForm() {
               Form created successfully
             </h2>
 
-            <p className="text-sm text-slate-500 text-center mt-2 mb-6">
+            <p className="text-sm text-slate-500 text-center mt-2 mb-6 text-justify">
               Your feedback form is ready to collect responses.
             </p>
 

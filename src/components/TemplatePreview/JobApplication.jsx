@@ -547,42 +547,37 @@ export default function JobApplication() {
           <div className="space-y-6 text-gray-600 text-sm md:text-base">
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                Can I edit the job application form structure?
+                Can I customize or edit this job application form?
               </h3>
               <p>
-                No, this is a predefined job application template designed to
-                collect consistent and structured applicant information without
-                customization.
+                No, this is a strictly predefined job application template. It is already perfectly structured with the necessary fields for work history and resume uploads, meaning no editing is required. You simply select it and use it.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                How do I share the job application form?
+                How do I collect job applications with this tool?
               </h3>
               <p>
-                Once created, you receive a public shareable link that can be
-                sent to candidates or embedded on your website.
+                When you select this ready-to-use template, the system instantly generates a unique, public shareable link. You just copy and paste this link onto your careers page, LinkedIn, or job boards to start getting submissions immediately.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                Where are submissions stored?
+                Where do I view the submitted resumes and candidate details?
               </h3>
               <p>
-                All job application submissions are securely stored inside your
-                submissions for easy access and review.
+                You do not need to sort through emails. All applicant submissions, including uploaded resumes and contact info, are automatically routed to your centralized FormPlate dashboard for easy and organized review.
               </p>
             </div>
 
             <div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                Is this job application form free?
+                Is this predefined job application link free to use?
               </h3>
               <p>
-                Yes, this predefined job application form can be created and
-                shared without cost.
+                Yes, using this predefined employment form, generating the shareable link, and tracking all candidate submissions in your dashboard is completely free.
               </p>
             </div>
           </div>

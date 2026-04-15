@@ -4,17 +4,16 @@ import React from "react";
 
 export const metadata = {
   title: "Event Registration Form Template with Shareable Link",
-
   description:
-    "Create a ready-to-use event registration form and generate a public link instantly. Collect attendee details and manage event registrations from your dashboard.",
-
+    "Host your next event with zero setup. Use our predefined event registration form template to instantly get a shareable link and manage all RSVP submissions in one secure dashboard.",
   keywords: [
-    "event registration form template",
-    "online event signup form",
-    "event registration form with link",
-    "collect event registrations online",
-    "event attendee registration form",
-    "free event registration form",
+    "predefined event registration form",
+    "ready to use event signup template",
+    "event registration shareable link",
+    "no code event rsvp form",
+    "online attendee registration dashboard",
+    "instant event form link",
+    "collect event signups online",
   ],
 
   alternates: {
@@ -56,41 +55,40 @@ const combinedSchema = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "Can I customize the event registration form?",
+          name: "Do I need technical skills to build this event registration form?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "No, this event registration form follows a structured template to ensure consistent attendee data collection.",
+            text: "Not at all. FormPlate provides a predefined event signup template. You do not need to drag-and-drop or edit any fields. Just select the template, and your form is instantly ready to accept attendees.",
           },
         },
         {
           "@type": "Question",
-          name: "How do I share the event registration form?",
+          name: "How do I invite attendees using this registration template?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "After creating the form, a public registration link is generated instantly. You can share it via email, social media, or your website.",
+            text: "The moment you select the template, FormPlate generates a custom, public shareable link. You can send this link to your guest list via email, post it on social media, or drop it in WhatsApp groups to start collecting RSVPs.",
           },
         },
         {
           "@type": "Question",
-          name: "Where are event registrations stored?",
+          name: "Where can I see the list of registered event attendees?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "All attendee registrations are securely stored in your dashboard where you can review and manage submissions.",
+            text: "All completed registrations and guest details are automatically routed to your centralized FormPlate dashboard. From there, you can easily track your guest count, view attendee information, and manage your event list.",
           },
         },
         {
           "@type": "Question",
-          name: "Is this event registration form free?",
+          name: "Is it free to generate a link for this event signup form?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, you can create and share this event registration form at no cost.",
+            text: "Yes, using our ready-made event registration template, getting your unique sharing link, and tracking your RSVPs in the dashboard is completely free.",
           },
         },
       ],
     },
   ],
 };
-
 
 function page() {
   return (

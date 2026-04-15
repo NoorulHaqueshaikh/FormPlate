@@ -624,41 +624,37 @@ export default function InternshipApplication() {
     <div className="space-y-6 text-gray-600 text-sm md:text-base">
       <div>
         <h3 className="font-semibold text-gray-900 mb-2">
-          Can I edit the internship application form structure?
+          Do I need to design the intern questionnaire from scratch?
         </h3>
         <p>
-          No, this is a predefined internship application template designed to
-          collect structured and consistent applicant information.
+          No, our intern hiring template is already pre-configured with standard fields to capture candidate details and academic backgrounds uniformly. You bypass the form-building phase entirely.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-gray-900 mb-2">
-          How do I share the internship application form?
+          How do I distribute this application to potential interns?
         </h3>
         <p>
-          After creating the form, you receive a public link that can be shared
-          via email, website, or campus announcement.
+          Instantly upon selection, you receive a custom public URL. You can easily post this link on university job boards, LinkedIn, your company's career page, or send it directly to student networks.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-gray-900 mb-2">
-          Where are internship submissions stored?
+          Where can I review the submitted student applications?
         </h3>
         <p>
-          All internship applications are securely stored inside your submissions section
-          where you can review and manage candidate details.
+          Every candidate's submission is automatically compiled into your private FormPlate workspace. You can easily screen, sort, and manage your entire intern pipeline without sorting through cluttered email inboxes.
         </p>
       </div>
 
       <div>
         <h3 className="font-semibold text-gray-900 mb-2">
-          Is this internship application form free?
+          Does it cost anything to use this student recruitment tool?
         </h3>
         <p>
-          Yes, you can create and share this predefined internship application
-          form at no cost.
+          No, generating the standalone application URL and organizing your intern candidates within the dashboard is completely free of charge.
         </p>
       </div>
     </div>

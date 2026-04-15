@@ -3,20 +3,17 @@ import Topbar from "@/components/Topbar";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Predefined Online Job Application Form | Shareable Link & Submission Dashboard",
-
+  title: "Predefined Job Application Form | Instant Shareable Link",
   description:
-    "Create and share a predefined online job application form with a public link. Collect structured job applications and view all submissions in your dashboard. No customization required.",
-
+    "Skip the form builder. Use our predefined job application template to instantly generate a shareable hiring link. Collect resumes and track candidate submissions directly in your dashboard.",
   keywords: [
     "predefined job application form",
-    "online job application form",
-    "shareable job application form link",
-    "collect job applications online",
-    "job application submission dashboard",
-    "ready to use job application form",
-    "job application form with submissions",
+    "shareable hiring link",
+    "ready to use employment form",
+    "collect resumes online",
+    "instant job form link",
+    "candidate submission dashboard",
+    "no edit recruitment form",
   ],
 
   alternates: {
@@ -33,7 +30,7 @@ const schema = [
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
     description:
-      "FormPlate provides a free predefined online job application form that allows companies to generate a shareable link and collect structured job application submissions in a centralized dashboard.",
+      "FormPlate provides a ready-to-use, predefined job application template. Employers can instantly generate a shareable public link and collect structured candidate submissions in a centralized dashboard without any building or editing.",
     brand: {
       "@type": "Brand",
       name: "FormPlate",
@@ -50,41 +47,40 @@ const schema = [
       availability: "https://schema.org/InStock",
     },
   },
-
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
       {
         "@type": "Question",
-        name: "Can I edit the job application form structure?",
+        name: "Can I customize or edit this job application form?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "No, this is a predefined job application template designed to collect consistent and structured applicant information without customization.",
+          text: "No, this is a strictly predefined job application template. It is already perfectly structured with the necessary fields for work history and resume uploads, meaning no editing is required. You simply select it and use it.",
         },
       },
       {
         "@type": "Question",
-        name: "How do I share the job application form?",
+        name: "How do I collect job applications with this tool?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Once created, you receive a public shareable link that can be sent to candidates or embedded on your website.",
+          text: "When you select this ready-to-use template, the system instantly generates a unique, public shareable link. You just copy and paste this link onto your careers page, LinkedIn, or job boards to start getting submissions immediately.",
         },
       },
       {
         "@type": "Question",
-        name: "Where are submissions stored?",
+        name: "Where do I view the submitted resumes and candidate details?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "All job application submissions are securely stored inside your dashboard for easy access and review.",
+          text: "You do not need to sort through emails. All applicant submissions, including uploaded resumes and contact info, are automatically routed to your centralized FormPlate dashboard for easy and organized review.",
         },
       },
       {
         "@type": "Question",
-        name: "Is this job application form free?",
+        name: "Is this predefined job application link free to use?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Yes, this predefined job application form can be created and shared without cost.",
+          text: "Yes, using this predefined employment form, generating the shareable link, and tracking all candidate submissions in your dashboard is completely free.",
         },
       },
     ],

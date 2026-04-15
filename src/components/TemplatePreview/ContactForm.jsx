@@ -19,8 +19,6 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-
-
 const TEMPLATE_NAME = "contact-form";
 
 const API = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000/api";
@@ -32,8 +30,6 @@ export default function ContactForm() {
   const [createdForm, setCreatedForm] = React.useState(null);
   const [isUsed, setIsUsed] = React.useState(false);
   const [checkingStatus, setCheckingStatus] = React.useState(true);
-
-
 
   React.useEffect(() => {
     checkTemplateUsage();
@@ -87,8 +83,6 @@ export default function ContactForm() {
 
   return (
     <div className="w-full min-h-screen bg-slate-50 p-4 md:p-8">
-
-
       {/* TOP NAVIGATION */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 md:mb-8">
         <div className="flex items-center gap-2 text-slate-500 hover:text-slate-900 transition-colors">
@@ -140,7 +134,7 @@ export default function ContactForm() {
                 <h3 className="text-lg font-bold text-slate-900 mb-2">
                   Start collecting messages
                 </h3>
-                <p className="text-slate-600 leading-relaxed text-sm md:text-base">
+                <p className="text-slate-600 leading-relaxed text-sm md:text-base text-justify">
                   Launch a professional contact channel for your audience in
                   seconds.
                   <strong>Use this template</strong> to create a live form,
@@ -218,10 +212,10 @@ export default function ContactForm() {
                 <div className="bg-gradient-to-r from-orange-500 to-amber-600 p-6 md:p-8 text-center relative overflow-hidden">
                   <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                   <h2 className="text-xl md:text-3xl font-bold text-white mb-2 relative z-10">
-  Get in Touch
-</h2>
+                    Get in Touch
+                  </h2>
 
-                  <p className="text-orange-50 text-xs md:text-sm relative z-10">
+                  <p className="text-orange-50 text-xs md:text-sm relative z-10 text-justify">
                     We are here to help. Send us a message and we'll respond
                     ASAP.
                   </p>
@@ -375,133 +369,141 @@ export default function ContactForm() {
       </div>
 
       {/* ================= CONTACT SEO SECTION ================= */}
-<div className="max-w-7xl mx-auto mt-20 space-y-16">
+      <div className="max-w-7xl mx-auto mt-20 space-y-16">
+        {/* INTRO */}
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+            Predefined Online Contact Form with Shareable Link
+          </h2>
 
-  {/* INTRO */}
-  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12">
-    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
-      Predefined Online Contact Form with Shareable Link
-    </h2>
+          <div className="grid md:grid-cols-2 gap-8 text-slate-600 text-sm md:text-base leading-relaxed">
+            <p className="text-justify">
+              This contact form is a ready-to-use predefined template designed
+              for businesses, startups, agencies, and service providers. There
+              is no need to edit or customize the structure. Simply create the
+              form and generate a public contact form link.
+            </p>
 
-    <div className="grid md:grid-cols-2 gap-8 text-slate-600 text-sm md:text-base leading-relaxed">
-      <p>
-        This contact form is a ready-to-use predefined template designed
-        for businesses, startups, agencies, and service providers.
-        There is no need to edit or customize the structure.
-        Simply create the form and generate a public contact form link.
-      </p>
-
-      <p>
-        Visitors can submit inquiries, support requests, or feedback
-        through a structured contact form. All messages are securely
-        stored inside your dashboard for organized review and response.
-      </p>
-    </div>
-  </div>
-
-  {/* HOW IT WORKS */}
-  <div className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 rounded-2xl p-8 md:p-12 border border-slate-100">
-    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
-      How the Contact Form Works
-    </h2>
-
-    <div className="grid md:grid-cols-4 gap-6 text-center">
-      {[
-        "Click 'Use This Template' to create your contact form.",
-        "A public contact form link is generated instantly.",
-        "Share the link on your website or social media.",
-        "View and manage all contact submissions in your submissions."
-      ].map((step, index) => (
-        <div
-          key={index}
-          className="bg-white rounded-xl shadow-sm p-6 border border-slate-100"
-        >
-          <div className="w-10 h-10 mx-auto mb-4 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center font-bold">
-            {index + 1}
+            <p className="text-justify">
+              Visitors can submit inquiries, support requests, or feedback
+              through a structured contact form. All messages are securely
+              stored inside your dashboard for organized review and response.
+            </p>
           </div>
-          <p className="text-slate-600 text-sm md:text-base">{step}</p>
         </div>
-      ))}
-    </div>
-  </div>
 
-  {/* BENEFITS */}
-  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12">
-    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">
-      Why Use a Structured Contact Form?
-    </h2>
+        {/* HOW IT WORKS */}
+        <div className="bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50 rounded-2xl p-8 md:p-12 border border-slate-100">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8 text-center">
+            How the Contact Form Works
+          </h2>
 
-    <div className="grid md:grid-cols-2 gap-6">
-      {[
-        "Collect standardized contact information",
-        "Organize customer messages in one dashboard",
-        "Avoid lost emails and scattered inquiries",
-        "Free and easy to share",
-        "No customization required",
-        "Centralized message management"
-      ].map((benefit, index) => (
-        <div
-          key={index}
-          className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg border border-slate-100"
-        >
-          <CheckCircle2 size={18} className="text-orange-600 mt-1" />
-          <span className="text-slate-700 text-sm md:text-base">
-            {benefit}
-          </span>
+          <div className="grid md:grid-cols-4 gap-6 text-center">
+            {[
+              "Click 'Use This Template' to create your contact form.",
+              "A public contact form link is generated instantly.",
+              "Share the link on your website or social media.",
+              "View and manage all contact submissions in your submissions.",
+            ].map((step, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-sm p-6 border border-slate-100"
+              >
+                <div className="w-10 h-10 mx-auto mb-4 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center font-bold">
+                  {index + 1}
+                </div>
+                <p className="text-slate-600 text-sm md:text-base text-justify">
+                  {step}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
 
-  {/* FAQ */}
-  <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12 mb-10">
-    <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">
-      Frequently Asked Questions
-    </h2>
+        {/* BENEFITS */}
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">
+            Why Use a Structured Contact Form?
+          </h2>
 
-    <div className="space-y-6 text-slate-600 text-sm md:text-base">
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-2">
-          Can I edit the contact form structure?
-        </h3>
-        <p>
-          No, this is a predefined contact form template designed to collect
-          consistent and structured messages without customization.
-        </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              "Collect standardized contact information",
+              "Organize customer messages in one dashboard",
+              "Avoid lost emails and scattered inquiries",
+              "Free and easy to share",
+              "No customization required",
+              "Centralized message management",
+            ].map((benefit, index) => (
+              <div
+                key={index}
+                className="flex items-start gap-3 bg-slate-50 p-4 rounded-lg border border-slate-100"
+              >
+                <CheckCircle2 size={18} className="text-orange-600 mt-1" />
+                <span className="text-slate-700 text-sm md:text-base text-justify">
+                  {benefit}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <div className="bg-white rounded-2xl shadow-lg border border-slate-100 p-8 md:p-12 mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-8">
+            Frequently Asked Questions
+          </h2>
+
+          <div className="space-y-6 text-slate-600 text-sm md:text-base">
+            <div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                Do I need to build or edit this contact form before using it?
+              </h3>
+              <p className="text-justify">
+                No setup or editing is required. FormPlate offers predefined
+                contact form templates. You simply select the template, get your
+                shareable link, and start collecting responses immediately
+                without dealing with complicated drag-and-drop builders.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                How do I share this online contact form with my customers?
+              </h3>
+              <p className="text-justify">
+                Once you select the predefined template, you will instantly
+                receive a unique, public shareable link. You can paste this link
+                directly on your website, social media profiles, Linktree, or in
+                email newsletters to start collecting messages.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                Where do the contact form submissions go?
+              </h3>
+              <p className="text-justify">
+                All contact form responses are automatically collected and
+                securely organized in your FormPlate dashboard. You can easily
+                view, track, and manage all your customer inquiries in one
+                centralized location without needing a separate database.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-slate-900 mb-2">
+                Can I use this predefined contact form template for free?
+              </h3>
+              <p className="text-justify">
+                Yes, FormPlate allows you to use this ready-made contact form
+                template, generate a custom public link, and manage your incoming
+                submissions in the dashboard completely for free.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-2">
-          How do I share the contact form?
-        </h3>
-        <p>
-          After creating the form, you receive a public link that can be
-          shared on your website, social media, or via email.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-2">
-          Where are contact messages stored?
-        </h3>
-        <p>
-          All contact submissions are securely stored in your submissions section
-          where you can review and manage inquiries.
-        </p>
-      </div>
-
-      <div>
-        <h3 className="font-semibold text-slate-900 mb-2">
-          Is this contact form free?
-        </h3>
-        <p>
-          Yes, you can create and share this predefined contact form at no cost.
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
 
       {showModal && createdForm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-4">
@@ -523,7 +525,7 @@ export default function ContactForm() {
               Form created successfully
             </h2>
 
-            <p className="text-sm text-slate-500 text-center mt-2 mb-6">
+            <p className="text-sm text-slate-500 text-center mt-2 mb-6 text-justify">
               Your contact form is ready to collect messages.
             </p>
 
