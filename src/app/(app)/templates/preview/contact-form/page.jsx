@@ -17,7 +17,7 @@ export const metadata = {
     "collect contact messages online",
   ],
   alternates: {
-    canonical: "https://formplate.andicode.com/templates/preview/contact-form",
+    canonical: "https://form-plate.vercel.app/templates/preview/contact-form",
   },
 };
 
@@ -37,7 +37,7 @@ const schema = [
     provider: {
       "@type": "Organization",
       name: "FormPlate",
-      url: "https://formplate.andicode.com",
+      url: "https://form-plate.vercel.app",
     },
     offers: {
       "@type": "Offer",

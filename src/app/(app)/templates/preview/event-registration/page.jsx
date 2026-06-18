@@ -18,7 +18,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://formplate.andicode.com/templates/preview/event-registration",
+      "https://form-plate.vercel.app/templates/preview/event-registration",
   },
 };
 
@@ -30,7 +30,7 @@ const combinedSchema = {
       name: "Event Registration Form Template with Shareable Link",
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web",
-      url: "https://formplate.andicode.com/templates/preview/event-registration",
+      url: "https://form-plate.vercel.app/templates/preview/event-registration",
       description:
         "FormPlate provides a ready-to-use event registration form template that allows organizers to generate a public link and collect structured attendee registrations in a centralized dashboard.",
       isAccessibleForFree: true,
@@ -41,7 +41,7 @@ const combinedSchema = {
       provider: {
         "@type": "Organization",
         name: "FormPlate",
-        url: "https://formplate.andicode.com",
+        url: "https://form-plate.vercel.app",
       },
       offers: {
         "@type": "Offer",

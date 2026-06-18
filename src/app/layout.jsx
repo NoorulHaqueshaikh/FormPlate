@@ -3,7 +3,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  metadataBase: new URL("https://formplate.andicode.com"),
+  metadataBase: new URL("https://form-plate.vercel.app"),
 
   title: {
     default: "FormPlate: Ready-to-Use Online Form Templates | Collect Submissions Instantly",
@@ -24,7 +24,7 @@ export const metadata = {
     title: "FormPlate — Structured Form Collection Platform",
     description:
       "Use ready-made form workflows to collect consistent data without designing forms.",
-    url: "https://formplate.andicode.com",
+    url: "https://form-plate.vercel.app",
     siteName: "FormPlate",
     locale: "en_US",
     type: "website",

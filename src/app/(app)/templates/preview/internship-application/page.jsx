@@ -19,7 +19,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://formplate.andicode.com/templates/preview/internship-application",
+      "https://form-plate.vercel.app/templates/preview/internship-application",
   },
 };
 
@@ -39,7 +39,7 @@ const schema = [
     provider: {
       "@type": "Organization",
       name: "FormPlate",
-      url: "https://formplate.andicode.com",
+      url: "https://form-plate.vercel.app",
     },
     offers: {
       "@type": "Offer",

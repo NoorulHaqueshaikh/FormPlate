@@ -99,7 +99,7 @@ export default function SignIn({ redirect }) {
     name: "Login",
     target: {
       "@type": "EntryPoint",
-      urlTemplate: "https://formplate.andicode.com/signin",
+      urlTemplate: "https://form-plate.vercel.app/signin",
       inLanguage: "en-US",
       actionPlatform: [
         "http://schema.org/DesktopWebPlatform",

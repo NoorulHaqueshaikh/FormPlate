@@ -18,7 +18,7 @@ export const metadata = {
 
   alternates: {
     canonical:
-      "https://formplate.andicode.com/templates/preview/feedback-form",
+      "https://form-plate.vercel.app/templates/preview/feedback-form",
   },
 };
 
@@ -39,7 +39,7 @@ const combinedSchema = {
       provider: {
         "@type": "Organization",
         name: "FormPlate",
-        url: "https://formplate.andicode.com",
+        url: "https://form-plate.vercel.app",
       },
       offers: {
         "@type": "Offer",
