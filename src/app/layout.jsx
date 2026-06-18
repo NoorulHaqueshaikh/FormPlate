@@ -15,7 +15,7 @@ export const metadata = {
 
 
   verification: {                       // ⭐ search console verification
-    google: "b0YkiHWRwBZMc32FZhPvvpG7o-XF9g6ZLJXJ_TRYnvI",
+    google: "1zQq9MCDYbPPbxLWzbAa99H7iSICZ593YVFOpejqMh8",
   },
 
 
